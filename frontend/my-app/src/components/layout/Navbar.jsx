@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className='flex items-center justify-between h-16'>
           {/*Logo*/}
           <a href="/" className='flex items-center space-x-2.5 group'>
-            <div className='w-9 h-9 bg-gradient-to-br from-green-300 to-emerald-500 rounded-xl flex items-center justify-center shadow-violet-500/20 group-hover:shadow-violet-500/40 transition-all duration-300 group-hover:scale-105'>
+            <div className='w-9 h-9 bg-linear-to-br from-green-300 to-emerald-500 rounded-xl flex items-center justify-center shadow-violet-500/20 group-hover:shadow-violet-500/40 transition-all duration-300 group-hover:scale-105'>
               <BookOpen className='w-5 h-5 text-blue-200' />
             </div>
             <span className='text-xl font-semibold text-emerald-500 tracking-tight'>
