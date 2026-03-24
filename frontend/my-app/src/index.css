@@ -14,6 +14,24 @@
   }
 
   body{
-    background-color: #B2CFD6;
+    background-color: #cceef7;
+  }
+}
+
+@keyframes mobile-menu-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .animate-mobile-menu {
+    animation: mobile-menu-slide-down 300ms ease-out;
   }
 }
