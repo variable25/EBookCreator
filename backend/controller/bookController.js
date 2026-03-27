@@ -140,5 +140,5 @@ module.exports = {
     getBookById,
     updateBook,
     deleteBook,
-    updateCoverImage
+    updateCoverImage,
 }

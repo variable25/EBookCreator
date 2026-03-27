@@ -11,7 +11,7 @@ const chapterSchema = new mongoose.Schema({
     },
     content:{
         type:String,
-        default:''
+        default:'',
     }
 })
 
