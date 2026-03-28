@@ -4,23 +4,23 @@ import {Star,Quote} from 'lucide-react'
 
 const Testimonials = () => {
   return (
-    <div id='testimonials' className='relative py-24 lg:py-32 bg-linear-to-'>
+    <div id='testimonials' className='relative py-24 lg:py-32 bg-linear-to-br from-cyan-200 via-white to-blue-200'>
       {/*Decorative Elements*/}
-      <div className=''></div>
-      <div className=''></div>
+      <div className='absolute top-20 w-64 h-64 right-10 bg-cyan-100 rounded-full blur-2xl'></div>
+      <div className='absolute bottom-20 left-10 w-96 h-96 bg-blue-100 rounded-full blur-3xl'></div>
 
-      <div className=''>
+      <div className='mx-auto max-w-7xl px-6 lg:px-8 relative'>
         {/*Header*/}
-        <div className=''>
-          <div className=''>
-            <Star className=''/>
-            <span className=''>Testimonials</span>
+        <div className='text-center mb-20 space-y-2'>
+          <div className='inline-flex items-center space-x-2 px-4 py-2 border border-blue-200 rounded-full bg-emerald-100 shadow-sm backdrop-blur-sm'>
+            <Star className='fill-amber-300 text-amber-300 w-4 h-4'/>
+            <span className='font-semibold text-emerald-600'>Testimonials</span>
           </div>
-          <h2 className=''>
+          <h2 className='text-4xl sm:text-5xl lg:text-6xl font-bold text-emerald-600 tracking-tight'>
             Loved by Creators
-            <span className=''>Everywhere</span>
+            <span className='block mt-2 bg-linear-to-r from-emerald-600 via-emerald-500 to-emerald-400 bg-clip-text text-transparent'>Everywhere</span>
           </h2>
-          <p className=''>
+          <p className='text-lg max-w-2xl mx-auto text-emerald-600'>
             Here's what the users have to say about our app
           </p>
         </div>
