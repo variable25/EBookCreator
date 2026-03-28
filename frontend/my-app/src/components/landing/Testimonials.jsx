@@ -4,7 +4,7 @@ import {Star,Quote} from 'lucide-react'
 
 const Testimonials = () => {
   return (
-    <div id='testimonials' className=''>
+    <div id='testimonials' className='relative py-24 lg:py-32 bg-linear-to-'>
       {/*Decorative Elements*/}
       <div className=''></div>
       <div className=''></div>
@@ -27,7 +27,7 @@ const Testimonials = () => {
 
         {/*Testimonials Grid*/}
         <div className=''>
-          {TESTIMONIALS.map((testimonial, index)=>{
+          {TESTIMONIALS.map((testimonial, index)=>(
             <div
               key={index}
               className=''
@@ -40,10 +40,13 @@ const Testimonials = () => {
               {/*Rating Stars*/}
               <div className=''>
                 {[...Array(testimonial.rating)].map((_,i)=>{
-                  <Star
+                  return (
+                    <Star
                     key={i}
                     className=''
                   />
+                  )
+                  
                 })}  
               </div>
 
@@ -57,8 +60,8 @@ const Testimonials = () => {
                 <div className=''>
                   <div className=''></div>
                   <img 
-                    src="{testimonal.avatar}" 
-                    alt="{testimonial.author}"
+                    src={testimonial.avatar}
+                    alt={testimonial.author}
                     className='' 
                   />
                 </div>
@@ -71,7 +74,7 @@ const Testimonials = () => {
               {/*Hover Gradient Background*/}
               <div className=''></div> 
             </div>
-          })}
+          ))}
         </div>
 
         {/*Bottom Stats*/}

@@ -56,25 +56,31 @@ export const HOW_IT_WORKS = [
 
 export const TESTIMONIALS = [
   {
-    name: "Aarav Mehta",
-    role: "Indie Author",
     quote:
-      "This helped me move from a rough idea to a real chapter plan much faster than writing from scratch.",
-    rating: 5
+      "This platform made it so easy to write and publish my first ebook. The AI assistant is a game-changer!",
+    author: "Jane Doe",
+    title: "Bestselling Author",
+    avatar:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+    rating: 5,
   },
   {
-    name: "Sofia Reed",
-    role: "Course Creator",
     quote:
-      "I used it to turn teaching notes into an ebook draft without jumping across multiple tools.",
-    rating: 5
+      "I love the customizable templates. I was able to create a beautiful ebook that matches my brand perfectly.",
+    author: "John Smith",
+    title: "Marketing Expert",
+    avatar:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
+    rating: 5,
   },
   {
-    name: "Daniel Park",
-    role: "Startup Founder",
     quote:
-      "The export flow and dashboard made the project feel organized from outline to final document.",
-    rating: 5
+      "The one-click export feature saved me so much time. I was able to publish my ebook on multiple platforms in minutes.",
+    author: "Peter Jones",
+    title: "Indie Publisher",
+    avatar:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop",
+    rating: 5,
   },
 ];
 
