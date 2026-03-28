@@ -36,5 +36,14 @@ app.use('/api/books',bookRoutes)
 app.use('/api/ai',aiRoutes)
 app.use('/api/export',exportRoutes)
 
+app.use((err, req, res, next) => {
+    if (err?.type === 'entity.parse.failed') {
+        console.warn(`Invalid JSON payload received for ${req.method} ${req.originalUrl}`)
+        return res.status(400).json({ message: 'Invalid JSON payload' })
+    }
+
+    return next(err)
+})
+
 const PORT = process.env.PORT || 3000
 app.listen(PORT,()=>{console.log(`Server running on port ${PORT}`)})

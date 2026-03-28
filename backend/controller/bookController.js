@@ -115,7 +115,7 @@ const updateBook = async (req, res) => {
             getBookQuery(req),
             updates,
             {
-                new: true,
+                returnDocument: 'after',
                 runValidators: true,
             }
         )
@@ -168,7 +168,7 @@ const updateCoverImage = async (req, res) => {
             getBookQuery(req),
             { coverImage: `/uploads/${req.file.filename}` },
             {
-                new: true,
+                returnDocument: 'after',
                 runValidators: true,
             }
         )
