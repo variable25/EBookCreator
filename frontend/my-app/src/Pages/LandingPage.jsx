@@ -7,7 +7,7 @@ import Footer from '../components/landing/Footer'
 
 const LandingPage = () => {
   return (
-    <div className='mb-[100vh]'>
+    <div>
       <Navbar/>
       <Hero/>
       <Features/>
