@@ -117,7 +117,7 @@ const Navbar = () => {
             </nav>
 
             <div className='px-4 py-4 border-t border-green-600'>
-              {!isAuthenticated ? (
+              {isAuthenticated ? (
                 <div className=' space-y-3'>
                   <div className='flex items-center space-x-3 px-2'>
                     <div className='w-8 h-8 bg-linear-to-br from-cyan-200 to-emerald-100 rounded-xl flex items-center justify-center'>

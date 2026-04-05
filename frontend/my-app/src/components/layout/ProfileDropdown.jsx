@@ -41,21 +41,22 @@ const ProfileDropdown = ({
 
       {isOpen && (
         <div className="absolute right-0 mt-2 w-56 bg-amber-100 rounded-xl shadow-lg border border-gray-100 py-2 z-50">
-          <div className="">
-            <p className="">{companyName}</p>
-            <p className="">{email}</p>
+          <div className="px-4 py-3 border-b border-gray-100">
+            <p className="text-sm font-medium text-emerald-500">{companyName}</p>
+            <p className="text-xs text-emerald-500">{email}</p>
           </div>
 
           <a 
             onClick={()=>Navigate('/profile')}
-            className=""  
+            className="block px-4 py-2 text-sm text-emerald-600 hover:bg-cyan-200 transition-colors duration-300"  
           >
             View Profile
           </a>
-          <div className="">
+          <div className="border-t border-emerald-900">
             <a 
               href="#"
               onClick={onLogout}
+              className="block py-2 px-4 text-sm text-cyan-600 hover:bg-cyan-200 transition-colors duration-300"
             >
               Signout
             </a>
